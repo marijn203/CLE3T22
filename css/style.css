@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+#mainImages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#mainImages img {
+    width: 30vw;
+}
+
+#mainImages a {
+    margin: 9vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 2vh;
+    border-bottom: black 3px solid;
+    background-color: lightblue;
+}
+
+nav input[type=text]{
+    margin-left: 30vw;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    background-color: #c9dde3;
+    border: black 2px solid;
+}
+
+nav input[type=submit]{
+    border-radius: 100px;
+    background-color: #c9dde3;
+    border: black 2px solid;
+    transition: background-color;
+}
+
+nav input[type=submit]:hover{
+    border-radius: 100px;
+    background-color: #9abed3;
+    transition: background-color 0.5s;
+}
+
+nav img{
+    width: 10vw;
+}

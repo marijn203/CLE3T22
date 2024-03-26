@@ -22,16 +22,18 @@ if (isset($_GET['submit'])) {
         <img src="images/logo.png" alt="Logo">
         <form action="" method="get">
             <input type="text" id="search" placeholder="Search...">
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" value="Search">
         </form>
     </nav>
 
     <main>
-<!--        dit zijn de fotos voor verschillende zorg instellingen      -->
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
+        <div id="mainImages">
+    <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Placeholder.png" alt="Logo"></a>
+        </div>
     </main>
 
     <footer>
