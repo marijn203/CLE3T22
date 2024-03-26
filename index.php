@@ -6,8 +6,6 @@ if (isset($_GET['submit'])) {
 // Redirect to login page
     header('Location: pages/results_page.php');
 }
-// Exit the code.
-exit;
 ?>
 
 <!doctype html>
