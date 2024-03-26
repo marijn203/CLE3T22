@@ -22,5 +22,10 @@
 <!--        er moet hier een plattegrond komen met text to speech die uitlegt hoe je ergens komt-->
     </main>
 
+    <footer>
+        <!--        dit is het logo     -->
+        <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Begrippenlijst.svg" alt="Logo">
+        <!--        er kunnen hier eventuele social media links/plaatjes        -->
+    </footer>
 </body>
 </html>

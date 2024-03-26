@@ -33,5 +33,11 @@ if (isset($_GET['submit'])) {
         <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="https://www.vorkaccountants.nl/wp-content/uploads/2018/01/placeholder.png" alt="Logo"></a>
         <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="https://www.vorkaccountants.nl/wp-content/uploads/2018/01/placeholder.png" alt="Logo"></a>
     </main>
+
+    <footer>
+        <!--        dit is het logo     -->
+        <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Begrippenlijst.svg" alt="Logo">
+<!--        er kunnen hier eventuele social media links/plaatjes        -->
+    </footer>
 </body>
 </html>
