@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #e3f1ff;
 }
 
 #mainImages {
@@ -23,7 +24,7 @@ nav {
     justify-content: left;
     padding: 2vh;
     border-bottom: black 3px solid;
-    background-color: lightblue;
+    background-color: #9feaff;
 }
 
 nav input[type=text]{
@@ -31,20 +32,20 @@ nav input[type=text]{
     padding: 10px;
     font-size: large;
     border-radius: 10px;
-    background-color: #c9dde3;
+    background-color: #e1f9ff;
     border: black 2px solid;
 }
 
 nav input[type=submit]{
     border-radius: 100px;
-    background-color: #c9dde3;
+    background-color: #e1f9ff;
     border: black 2px solid;
     transition: background-color;
 }
 
 nav input[type=submit]:hover{
     border-radius: 100px;
-    background-color: #9abed3;
+    background-color: #baf3ff;
     transition: background-color 0.5s;
 }
 
@@ -61,7 +62,7 @@ footer {
     justify-content: left;
     padding: 2vh;
     border-top: black 3px solid;
-    background-color: lightblue;
+    background-color: #9feaff;
 }
 
 footer img{
