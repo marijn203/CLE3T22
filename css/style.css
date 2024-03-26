@@ -50,6 +50,8 @@ nav input[type=submit]:hover{
 
 nav img{
     width: 10vw;
+    border: black solid 2px;
+    border-radius: 10px;
 }
 
 footer {
@@ -64,4 +66,6 @@ footer {
 
 footer img{
     width: 10vw;
+    border: black solid 2px;
+    border-radius: 10px;
 }
