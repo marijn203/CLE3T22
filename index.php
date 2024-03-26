@@ -3,8 +3,11 @@ require_once "includes/database.php";
 
 //hier moet je naar andere pagina om search results op te zoeken
 if (isset($_GET['submit'])) {
-// Redirect to login page
-    header('Location: pages/results_page.php');
+    // Debugging: Check if condition is met
+    echo "Form is submitted!";
+    // Redirect to search page
+    header('Location: pages/search.php');
+    exit; // Ensure script execution stops after redirection
 }
 ?>
 
@@ -24,8 +27,8 @@ if (isset($_GET['submit'])) {
 <!--        dit is het logo     -->
         <img src="images/logo.png" alt="Logo">
         <form action="" method="get">
-            <input type="text" id="search" placeholder="Search...">
-            <input type="submit" id="submit" value="Search">
+            <input type="text" id="search" name="search" placeholder="Search...">
+            <input type="submit" id="submit" name="submit" value="Search">
         </form>
     </nav>
 

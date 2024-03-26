@@ -62,3 +62,31 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="application/javascript" src="../js/main.js"></script>
+    <title>Audioscape</title>
+</head>
+<body>
+<nav>
+    <!--        dit is het logo     -->
+    <img src="../images/logo.png" alt="Logo">
+</nav>
+
+<main>
+</main>
+
+<footer>
+    <!--        dit is het logo     -->
+    <img src="../images/logo.png" alt="Logo">
+    <!--        er kunnen hier eventuele social media links/plaatjes        -->
+</footer>
+</body>
+</html>
