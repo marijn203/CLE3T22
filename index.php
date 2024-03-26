@@ -1,9 +1,8 @@
 <?php
+require_once "includes/database.php";
 if (isset($_GET['submit'])) {
     //hier moet je naar andere pagina om search results op te zoeken
 }
-
-
 ?>
 
 <!doctype html>

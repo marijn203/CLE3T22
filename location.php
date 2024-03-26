@@ -18,6 +18,7 @@
     </nav>
 
     <main>
+
 <!--        er moet hier een plattegrond komen met text to speech die uitlegt hoe je ergens komt-->
     </main>
 
