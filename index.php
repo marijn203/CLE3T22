@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['submit'])) {
-    //hier moeten search results worden gezocht
+    //hier moet je naar andere pagina om search results op te zoeken
 }
 
 
@@ -19,6 +19,7 @@ if (isset($_GET['submit'])) {
 </head>
 <body>
     <nav>
+<!--        dit is het logo     -->
         <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Begrippenlijst.svg" alt="Logo">
         <form action="" method="get">
             <input type="text" id="search" placeholder="Search...">
@@ -27,6 +28,7 @@ if (isset($_GET['submit'])) {
     </nav>
 
     <main>
+<!--        dit zijn de fotos voor verschillende zorg instellingen      -->
         <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="https://www.vorkaccountants.nl/wp-content/uploads/2018/01/placeholder.png" alt="Logo"></a>
         <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="https://www.vorkaccountants.nl/wp-content/uploads/2018/01/placeholder.png" alt="Logo"></a>
         <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="https://www.vorkaccountants.nl/wp-content/uploads/2018/01/placeholder.png" alt="Logo"></a>
