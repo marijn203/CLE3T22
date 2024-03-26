@@ -1,6 +1,6 @@
 <?php
 
-$host = "database.sql";
+$host = "localhost";
 $user = "root";
 $password = "";
 $database = "cle3";
