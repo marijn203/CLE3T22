@@ -1,8 +1,13 @@
 <?php
 require_once "includes/database.php";
+
+//hier moet je naar andere pagina om search results op te zoeken
 if (isset($_GET['submit'])) {
-    //hier moet je naar andere pagina om search results op te zoeken
+// Redirect to login page
+    header('Location: pages/results_page.php');
 }
+// Exit the code.
+exit;
 ?>
 
 <!doctype html>
@@ -14,7 +19,7 @@ if (isset($_GET['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/javascript" src="js/main.js"></script>
-    <title>Document</title>
+    <title>Audioscape</title>
 </head>
 <body>
     <nav>
