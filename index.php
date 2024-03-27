@@ -41,12 +41,15 @@ if (isset($_GET['submit'])) {
             </div>
             <div id="mainImage">
                 <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Bartiméus.png" alt="Logo"></a>
+                <p>Bartiméus Rotterdam</p>
             </div>
             <div id="mainImage">
                 <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Bartiméus.png" alt="Logo"></a>
+                <p>Bartiméus Rotterdam</p>
             </div>
             <div id="mainImage">
                 <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Bartiméus.png" alt="Logo"></a>
+                <p>Bartiméus Rotterdam</p>
             </div>
         </div>
     </main>
