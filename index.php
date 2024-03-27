@@ -12,7 +12,7 @@ if (isset($_GET['submit'])) {
     // Debugging: Check if condition is met
     echo "Form is submitted!";
     // Redirect to search page
-    header('Location: pages/search.php');
+    header('Location: pages/search.php?search=');
     exit; // Ensure script execution stops after redirection
 }
 ?>
