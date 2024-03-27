@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 26, 2024 at 11:17 AM
+-- Generation Time: Mar 27, 2024 at 09:51 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -37,6 +37,15 @@ CREATE TABLE `locations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `locations`
+--
+
+INSERT INTO `locations` (`id`, `name`, `city`, `street`, `number`, `postalCode`) VALUES
+                                                                                     (1, 'Bartiméus', 'Rotterdam', 'Maasstadweg', 150, '3079DZ'),
+                                                                                     (2, 'Visio', 'Rotterdam', 'Schiedamse Vest', 158, '3011BH'),
+                                                                                     (3, 'Stichting Beter Zien Anders Kijken', 'Rotterdam', 'Kipstraat', 37, '3011RS');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -54,7 +63,7 @@ ALTER TABLE `locations`
 -- AUTO_INCREMENT for table `locations`
 --
 ALTER TABLE `locations`
-    MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+    MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
