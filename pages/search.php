@@ -14,7 +14,7 @@ if (isset($_GET['submit'])) {
     echo "Form is submitted!";
 
     // Redirect to search page
-    header('Location: search.php?search=' . urlencode($_GET['search']));
+    header('Location: search.php?search=' . $_GET['search']);
     exit; // Ensure script execution stops after redirection
 }
 
@@ -63,7 +63,7 @@ mysqli_close($db);
         </div>
         <div id="navSearch">
         <form action="" method="get">
-            <input type="text" id="search" placeholder="Search...">
+            <input type="text" id="search" name="search" placeholder="Search...">
             <input type="submit" id="submit" name="submit">
         </form>
         </div>
