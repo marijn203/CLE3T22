@@ -40,14 +40,14 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     padding: 2vh;
     border-bottom: black 3px solid;
     background-color: #9feaff;
+    text-align: center;
 }
 
 nav input[type=text]{
-    margin-left: 29vw;
     padding: 10px;
     font-size: large;
     border-radius: 10px;
@@ -97,5 +97,25 @@ footer img{
 #map{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+#navText {
+    text-align: center;
+    flex: 1;
+}
+
+#navLogo {
+    display: flex;
+    justify-content: left;
+    flex: 1;
+}
+
+#navFiller{
+    flex: 1;
+}
+
+#navSearch{
+    flex: 1;
     align-items: center;
 }

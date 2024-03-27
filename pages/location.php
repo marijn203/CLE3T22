@@ -11,9 +11,16 @@
 <body>
     <nav>
         <!--        dit is het logo     -->
-        <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
+        <div id="navLogo">
+            <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
+        </div>
         <form action="" method="get">
         </form>
+        <div id="navText">
+            <h1>Naam locatie</h1>
+        </div>
+        <div id="navFiller">
+        </div>
     </nav>
 
     <main>

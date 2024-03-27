@@ -25,10 +25,18 @@ if (isset($_GET['submit'])) {
 <body>
     <nav>
 <!--        dit is het logo     -->
-        <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
+        <div id="navLogo">
+            <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
+        </div>
         <form action="" method="get">
-            <input type="text" id="search" name="search" placeholder="Search...">
-            <input type="submit" id="submit" name="submit" value="Search">
+            <div id="navSearch">
+                <form action="" method="get">
+                    <input type="text" id="search" placeholder="Search...">
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+            <div id="navFiller">
+            </div>
         </form>
     </nav>
 
