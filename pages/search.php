@@ -30,12 +30,14 @@ if (isset($_GET['search'])) {
         while ($row = mysqli_fetch_assoc($result)) {
             $search_results[] = $row; // Store search results in an array
         }
-        mysqli_free_result($result);
     } else {
         echo "Error: " . mysqli_error($db);
     }
 }
 
+
+
+print_r($search_results);
 // Close connection
 
 mysqli_close($db);
@@ -76,7 +78,7 @@ mysqli_close($db);
             // Display search results
             foreach ($search_results as $result) {
                 echo '<div id="mainImage">';
-                echo '<a href="../pages/location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>';
+                echo '<a href="../pages/location.php"><img src="../images/' . $result['picture'] . '"  alt="Logo"></a>';
                 echo '<p>' . $result['name'] . '</p>';
                 echo '</div>';
             }
