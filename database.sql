@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2024 at 09:51 AM
+-- Generation Time: Mar 27, 2024 at 10:21 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -33,17 +33,18 @@ CREATE TABLE `locations` (
                              `city` varchar(255) NOT NULL,
                              `street` varchar(255) NOT NULL,
                              `number` int(10) UNSIGNED NOT NULL,
-                             `postalCode` varchar(255) NOT NULL
+                             `postalCode` varchar(255) NOT NULL,
+                             `picture` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `locations`
 --
 
-INSERT INTO `locations` (`id`, `name`, `city`, `street`, `number`, `postalCode`) VALUES
-                                                                                     (1, 'Bartiméus', 'Rotterdam', 'Maasstadweg', 150, '3079DZ'),
-                                                                                     (2, 'Visio', 'Rotterdam', 'Schiedamse Vest', 158, '3011BH'),
-                                                                                     (3, 'Stichting Beter Zien Anders Kijken', 'Rotterdam', 'Kipstraat', 37, '3011RS');
+INSERT INTO `locations` (`id`, `name`, `city`, `street`, `number`, `postalCode`, `picture`) VALUES
+                                                                                                (1, 'Bartiméus', 'Rotterdam', 'Maasstadweg', 150, '3079DZ', 'Bartiméus.png'),
+                                                                                                (2, 'Visio', 'Rotterdam', 'Schiedamse Vest', 158, '3011BH', 'Visio.png'),
+                                                                                                (3, 'Stichting Beter Zien Anders Kijken', 'Rotterdam', 'Kipstraat', 37, '3011RS', 'StichtingBeterZienAndersKijken.png');
 
 --
 -- Indexes for dumped tables
