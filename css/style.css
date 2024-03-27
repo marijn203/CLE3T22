@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #e3f1ff;
+    font-family: Arial ;
 }
 
 #mainImages {
@@ -9,12 +10,30 @@ body {
     flex-wrap: wrap;
 }
 
-#mainImages img {
+#mainImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 30vw;
+    height: 50vh;
+    margin: 9vw;
+    background-color: #9feaff;
+    border-radius: 30px;
+    border: black solid 3px;
 }
 
-#mainImages a {
-    margin: 9vw;
+#mainImage img{
+    width: 30vw;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#mainImage p{
+    margin-top: 0;
+    font-size: larger;
+    font-weight: bold;
 }
 
 nav {
