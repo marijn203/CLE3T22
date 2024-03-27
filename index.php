@@ -7,7 +7,6 @@ if (isset($_GET['submit'])) {
     echo "Form is submitted!";
     // Redirect to search page
     header('Location: pages/search.php');
-    exit; // Ensure script execution stops after redirection
 }
 ?>
 
@@ -32,7 +31,7 @@ if (isset($_GET['submit'])) {
             <div id="navSearch">
                 <form action="" method="get">
                     <input type="text" id="search" placeholder="Search...">
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" name="submit">
                 </form>
             </div>
             <div id="navFiller">

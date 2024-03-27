@@ -26,7 +26,7 @@ if (isset($_GET['submit'])) {
         <div id="navSearch">
         <form action="" method="get">
             <input type="text" id="search" placeholder="Search...">
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" name="submit">
         </form>
         </div>
         <div id="navFiller">
