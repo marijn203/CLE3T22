@@ -8,6 +8,8 @@ require_once "../includes/database.php";
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+$search_results = array(); // Initialize an array to store search results
+
 // Check if form is submitted
 if (isset($_GET['submit'])) {
     // Debugging: Check if condition is met
@@ -18,19 +20,15 @@ if (isset($_GET['submit'])) {
     exit; // Ensure script execution stops after redirection
 }
 
-// Fetch information from the database based on the search query
+// Check if search results are available
 if (isset($_GET['search'])) {
     $search_term = $_GET['search'];
     $query = "SELECT * FROM locations WHERE name LIKE '%$search_term%'";
     $result = mysqli_query($db, $query);
 
     if ($result) {
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo $row['name'] . "<br>";
-            }
-        } else {
-            echo "No results found.";
+        while ($row = mysqli_fetch_assoc($result)) {
+            $search_results[] = $row; // Store search results in an array
         }
         mysqli_free_result($result);
     } else {
@@ -74,22 +72,15 @@ mysqli_close($db);
     <main>
         <div id="mainImages">
             <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
-            <div id="mainImage">
-                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
-            <div id="mainImage">
-                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
-            <div id="mainImage">
-                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
-            <div id="mainImage">
-                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
+            <?php
+            // Display search results
+            foreach ($search_results as $result) {
+                echo '<div id="mainImage">';
+                echo '<a href="../pages/location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>';
+                echo '<p>' . $result['name'] . '</p>';
+                echo '</div>';
+            }
+            ?>
         </div>
     </main>
     <footer>
