@@ -28,11 +28,13 @@ if (isset($_GET['submit'])) {
     </nav>
 
     <main>
-        <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
-        <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
+        <div id="mainImages">
+            <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
+            <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Placeholder.png" alt="Logo"></a>
+        </div>
     </main>
     <footer>
         <!--        dit is het logo     -->
