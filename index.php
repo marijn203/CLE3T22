@@ -1,5 +1,11 @@
 <?php
+session_start();
+
 require_once "includes/database.php";
+
+// Error reporting
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 //hier moet je naar andere pagina om search results op te zoeken
 if (isset($_GET['submit'])) {
@@ -7,6 +13,7 @@ if (isset($_GET['submit'])) {
     echo "Form is submitted!";
     // Redirect to search page
     header('Location: pages/search.php');
+    exit; // Ensure script execution stops after redirection
 }
 ?>
 
@@ -29,9 +36,9 @@ if (isset($_GET['submit'])) {
         </div>
         <form action="" method="get">
             <div id="navSearch">
-                <form action="" method="get">
-                    <input type="text" id="search" placeholder="Search...">
-                    <input type="submit" id="submit" name="submit">
+                <form action="pages/search.php" method="get">
+                    <input type="text" id="search" name="search" placeholder="Search...">
+                    <input type="submit" id="submit" name="submit" value="Search">
                 </form>
             </div>
             <div id="navFiller">

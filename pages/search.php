@@ -1,8 +1,46 @@
 <?php
+/** @var mysqli $db */
+session_start();
+
+require_once "../includes/database.php";
+
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Check if form is submitted
 if (isset($_GET['submit'])) {
-    //je moet info uit database halen om de goede locaties te tonen met search result
+    // Debugging: Check if condition is met
+    echo "Form is submitted!";
+
+    // Redirect to search page
+    header('Location: search.php?search=' . urlencode($_GET['search']));
+    exit; // Ensure script execution stops after redirection
 }
 
+// Fetch information from the database based on the search query
+if (isset($_GET['search'])) {
+    $search_term = $_GET['search'];
+    $query = "SELECT * FROM locations WHERE name LIKE '%$search_term%'";
+    $result = mysqli_query($db, $query);
+
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo $row['name'] . "<br>";
+            }
+        } else {
+            echo "No results found.";
+        }
+        mysqli_free_result($result);
+    } else {
+        echo "Error: " . mysqli_error($db);
+    }
+}
+
+// Close connection
+
+mysqli_close($db);
 
 ?>
 
@@ -15,7 +53,7 @@ if (isset($_GET['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
     <script type="application/javascript" src="../js/main.js"></script>
-    <title>Document</title>
+    <title>Audioscape</title>
 </head>
 <body>
     <nav>
