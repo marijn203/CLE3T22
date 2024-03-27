@@ -37,16 +37,19 @@ if (isset($_GET['submit'])) {
         <div id="mainImages">
             <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
             <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Bartiméus.png" alt="Logo"></a>
+                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
-            </div>            <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Bartiméus.png" alt="Logo"></a>
+            </div>
+            <div id="mainImage">
+                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
-            </div>            <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Bartiméus.png" alt="Logo"></a>
+            </div>
+            <div id="mainImage">
+                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
-            </div>            <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="../images/Bartiméus.png" alt="Logo"></a>
+            </div>
+            <div id="mainImage">
+                <a href="location.php"><img src="../images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
             </div>
         </div>
