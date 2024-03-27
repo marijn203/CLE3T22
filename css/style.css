@@ -60,6 +60,7 @@ nav input[type=submit]{
     background-color: #e1f9ff;
     border: black 2px solid;
     transition: background-color;
+    cursor: pointer;
 }
 
 nav input[type=submit]:hover{
