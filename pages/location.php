@@ -5,26 +5,28 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
         <!--        dit is het logo     -->
-        <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Begrippenlijst.svg" alt="Logo">
+        <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
         <form action="" method="get">
-            <input type="text" id="search" placeholder="Search...">
-            <input type="submit" id="submit">
         </form>
     </nav>
 
     <main>
 
 <!--        er moet hier een plattegrond komen met text to speech die uitlegt hoe je ergens komt-->
+        <div id="map">
+            <img src="../images/Placeholder.png" alt="placeholder">
+        </div>
     </main>
 
     <footer>
         <!--        dit is het logo     -->
-        <img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Begrippenlijst.svg" alt="Logo">
+        <img src="../images/logo.png" alt="Logo">
         <!--        er kunnen hier eventuele social media links/plaatjes        -->
     </footer>
 </body>

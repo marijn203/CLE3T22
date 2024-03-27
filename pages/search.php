@@ -20,7 +20,7 @@ if (isset($_GET['submit'])) {
 <body>
     <nav>
         <!--        dit is het logo     -->
-        <img src="../images/logo.png" alt="Logo">
+        <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
         <form action="" method="get">
             <input type="text" id="search" placeholder="Search...">
             <input type="submit" id="submit">

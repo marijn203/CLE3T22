@@ -89,3 +89,12 @@ footer img{
     border: black solid 2px;
     border-radius: 10px;
 }
+
+#map img{
+    width: 80vw;
+}
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

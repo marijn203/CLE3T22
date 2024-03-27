@@ -25,7 +25,7 @@ if (isset($_GET['submit'])) {
 <body>
     <nav>
 <!--        dit is het logo     -->
-        <img src="images/logo.png" alt="Logo">
+        <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
         <form action="" method="get">
             <input type="text" id="search" name="search" placeholder="Search...">
             <input type="submit" id="submit" name="submit" value="Search">
@@ -36,19 +36,19 @@ if (isset($_GET['submit'])) {
         <div id="mainImages">
     <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
             <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Bartiméus.png" alt="Logo"></a>
+                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
             </div>
             <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Bartiméus.png" alt="Logo"></a>
+                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
             </div>
             <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Bartiméus.png" alt="Logo"></a>
+                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
             </div>
             <div id="mainImage">
-                <a href="https://trello.com/b/qZwYaU6s/cle-3"><img src="images/Bartiméus.png" alt="Logo"></a>
+                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
                 <p>Bartiméus Rotterdam</p>
             </div>
         </div>
