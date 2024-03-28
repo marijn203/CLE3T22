@@ -37,7 +37,6 @@ if (isset($_GET['search'])) {
 
 
 
-print_r($search_results);
 // Close connection
 
 mysqli_close($db);
@@ -76,13 +75,18 @@ mysqli_close($db);
             <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
             <?php
             // Display search results
-            foreach ($search_results as $result) {
-                echo '<div id="mainImage">';
-                echo '<a href="../pages/location.php"><img src="../images/' . $result['picture'] . '"  alt="Logo"></a>';
-                echo '<p>' . $result['name'] . '</p>';
-                echo '</div>';
-            }
-            ?>
+            if ($search_results) {
+                foreach ($search_results as $result) {
+                    echo '<div id="mainImage">';
+                    echo '<a href="../pages/location.php"><img src="../images/' . $result['picture'] . '"  alt="Logo"></a>';
+                    echo '<p>' . $result['name'] . '</p>';
+                    echo '</div>';
+                }
+            } else { ?>
+                <div id="noResults">
+                    <p>No results found</p>
+                </div>
+                <?php } ?>
         </div>
     </main>
     <footer>
