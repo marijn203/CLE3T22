@@ -67,7 +67,7 @@ if (isset($_GET['submit'])) {
             // Display all locations
             foreach ($locations as $location) {
                 echo '<div id="mainImage">';
-                echo '<a href="../pages/location.php"><img src="../images/' . $location['picture'] . '"  alt="Logo"></a>';
+                echo '<a href="../pages/location.php"><img src="./images/' . $location['picture'] . '"  alt="Logo"></a>';
                 echo '<p>' . $location['name'] . '</p>';
                 echo '</div>';
             }
