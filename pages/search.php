@@ -35,6 +35,18 @@ if (isset($_GET['search'])) {
     }
 }
 
+// Fetch all locations from the database
+$query = "SELECT * FROM locations";
+$result = mysqli_query($db, $query);
+
+$locations = []; // Initialize an array to store locations
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $locations[] = $row; // Store each location in the array
+    }
+} else {
+    echo "Error: " . mysqli_error($db);
+}
 
 // Error Debugging
 //print_r($search_results);
@@ -87,7 +99,14 @@ mysqli_close($db);
                 <div id="noResults">
                     <p>No results found</p>
                 </div>
-                <?php } ?>
+                <?php }
+            // Display all locations
+            foreach ($locations as $location) {
+                echo '<div id="mainImage">';
+                echo '<a href="../pages/location.php"><img src="../images/' . $location['picture'] . '"  alt="Logo"></a>';
+                echo '<p>' . $location['name'] . '</p>';
+                echo '</div>';
+            } ?>
         </div>
     </main>
     <footer>
