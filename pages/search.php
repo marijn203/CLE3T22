@@ -36,9 +36,10 @@ if (isset($_GET['search'])) {
 }
 
 
+// Error Debugging
+//print_r($search_results);
 
 // Close connection
-
 mysqli_close($db);
 
 ?>

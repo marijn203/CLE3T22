@@ -1,4 +1,5 @@
 <?php
+/** @var mysqli $db */
 session_start();
 
 require_once "includes/database.php";
@@ -6,6 +7,19 @@ require_once "includes/database.php";
 // Error reporting
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
+// Fetch all locations from the database
+$query = "SELECT * FROM locations";
+$result = mysqli_query($db, $query);
+
+$locations = []; // Initialize an array to store locations
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $locations[] = $row; // Store each location in the array
+    }
+} else {
+    echo "Error: " . mysqli_error($db);
+}
 
 //hier moet je naar andere pagina om search results op te zoeken
 if (isset($_GET['submit'])) {
@@ -49,22 +63,15 @@ if (isset($_GET['submit'])) {
     <main>
         <div id="mainImages">
     <!--        dit zijn de fotos voor verschillende zorg instellingen      -->
-            <div id="mainImage">
-                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
-            <div id="mainImage">
-                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
-            <div id="mainImage">
-                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
-            <div id="mainImage">
-                <a href="pages/location.php"><img src="images/Bartiméus.png" alt="Logo"></a>
-                <p>Bartiméus Rotterdam</p>
-            </div>
+            <?php
+            // Display all locations
+            foreach ($locations as $location) {
+                echo '<div id="mainImage">';
+                echo '<a href="../pages/location.php"><img src="../images/' . $location['picture'] . '"  alt="Logo"></a>';
+                echo '<p>' . $location['name'] . '</p>';
+                echo '</div>';
+            }
+            ?>
         </div>
     </main>
 
