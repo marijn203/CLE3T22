@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #e3f1ff;
+    background-color: #f7fbff;
     font-family: Arial ;
 }
 
@@ -17,9 +17,10 @@ body {
     width: 30vw;
     height: 50vh;
     margin: 9vw;
-    background-color: #9feaff;
+    background-color: #45dbff;
     border-radius: 30px;
     border: black solid 3px;
+    font-size: larger;
 }
 
 #mainImage img{
@@ -43,7 +44,7 @@ nav {
     justify-content: space-between;
     padding: 2vh;
     border-bottom: black 3px solid;
-    background-color: #9feaff;
+    background-color: #45dbff;
     text-align: center;
 }
 
@@ -51,7 +52,7 @@ nav input[type=text]{
     padding: 10px;
     font-size: large;
     border-radius: 10px;
-    background-color: #e1f9ff;
+    background-color: #f7fbff;
     border: black 2px solid;
 }
 
@@ -82,7 +83,7 @@ footer {
     justify-content: left;
     padding: 2vh;
     border-top: black 3px solid;
-    background-color: #9feaff;
+    background-color: #45dbff;
 }
 
 footer img{

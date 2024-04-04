@@ -76,7 +76,7 @@ mysqli_close($db);
         <div id="navSearch">
         <form action="" method="get">
             <input type="text" id="search" name="search" placeholder="Search...">
-            <input type="submit" id="submit" name="submit">
+            <input type="submit" id="submit" name="submit" value="Search">
         </form>
         </div>
         <div id="navFiller">
