@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2024 at 10:21 AM
+-- Generation Time: Apr 04, 2024 at 10:05 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -34,17 +34,18 @@ CREATE TABLE `locations` (
                              `street` varchar(255) NOT NULL,
                              `number` int(10) UNSIGNED NOT NULL,
                              `postalCode` varchar(255) NOT NULL,
-                             `picture` varchar(255) NOT NULL
+                             `picture` varchar(255) NOT NULL,
+                             `map` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `locations`
 --
 
-INSERT INTO `locations` (`id`, `name`, `city`, `street`, `number`, `postalCode`, `picture`) VALUES
-                                                                                                (1, 'Bartiméus', 'Rotterdam', 'Maasstadweg', 150, '3079DZ', 'Bartiméus.png'),
-                                                                                                (2, 'Visio', 'Rotterdam', 'Schiedamse Vest', 158, '3011BH', 'Visio.png'),
-                                                                                                (3, 'Stichting Beter Zien Anders Kijken', 'Rotterdam', 'Kipstraat', 37, '3011RS', 'StichtingBeterZienAndersKijken.png');
+INSERT INTO `locations` (`id`, `name`, `city`, `street`, `number`, `postalCode`, `picture`, `map`) VALUES
+                                                                                                       (1, 'Bartiméus', 'Rotterdam', 'Maasstadweg', 150, '3079DZ', 'Bartiméus.png', 'BartiméusMap.png'),
+                                                                                                       (2, 'Visio', 'Rotterdam', 'Schiedamse Vest', 158, '3011BH', 'Visio.png', 'VisioMap.png'),
+                                                                                                       (3, 'Stichting Beter Zien Anders Kijken', 'Rotterdam', 'Kipstraat', 37, '3011RS', 'StichtingBeterZienAndersKijken.png', 'StichtingBeterZienAndersKijkenMap.png');
 
 --
 -- Indexes for dumped tables
