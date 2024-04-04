@@ -92,10 +92,10 @@ footer img{
     border-radius: 10px;
 }
 
-#map img{
+#locationMap img{
     width: 80vw;
 }
-#map{
+#locationMap{
     display: flex;
     justify-content: center;
     align-items: center;
