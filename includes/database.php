@@ -12,4 +12,3 @@ if (!$db) {
     // If connection fails, output an error message and stop execution
     die("Error: " . mysqli_connect_error());
 }
-?>
