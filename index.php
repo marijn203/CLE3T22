@@ -40,13 +40,13 @@ if (isset($_GET['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/javascript" src="js/main.js"></script>
-    <title>Audioscape</title>
+    <title>Soundscape</title>
 </head>
 <body>
     <nav>
 <!--        dit is het logo     -->
         <div id="navLogo">
-            <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
+            <a href="index.php"><img src="images/logo.png" alt="Home button"></a>
         </div>
         <form action="" method="get">
             <div id="navSearch">
@@ -67,7 +67,7 @@ if (isset($_GET['submit'])) {
             // Display all locations
             foreach ($locations as $location) {
                 echo '<div id="mainImage">';
-                echo '<a href="pages/location.php?id=' . $location['id'] .'"><img src="./images/' . $location['picture'] . '"  alt="Logo"></a>';
+                echo '<a href="pages/location.php?id=' . $location['id'] .'"><img src="./images/' . $location['picture'] . '"  alt="' . $location['name'] . '"></a>';
                 echo '<p>' . $location['name'] . '</p>';
                 echo '</div>';
             }
@@ -77,7 +77,7 @@ if (isset($_GET['submit'])) {
 
     <footer>
         <!--        dit is het logo     -->
-        <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
+        <a href="index.php"><img src="images/logo.png" alt="Footer home button"></a>
 <!--        er kunnen hier eventuele social media links/plaatjes        -->
     </footer>
 </body>
