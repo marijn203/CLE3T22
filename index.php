@@ -77,7 +77,7 @@ if (isset($_GET['submit'])) {
 
     <footer>
         <!--        dit is het logo     -->
-        <a href="index.php"><img src="images/logo.png" alt="Footer home button"></a>
+        <a href="index.php"><img src="images/logo.png" alt="Logo"></a>
 <!--        er kunnen hier eventuele social media links/plaatjes        -->
     </footer>
 </body>
