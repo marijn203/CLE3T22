@@ -91,7 +91,7 @@ mysqli_close($db);
             if ($search_results) {
                 foreach ($search_results as $result) {
                     echo '<div id="mainImage">';
-                    echo '<a href="../pages/location.php"><img src="../images/' . $result['picture'] . '"  alt="Logo"></a>';
+                    echo '<a href="../pages/location.php?id=' . $result['id'] .'"><img src="../images/' . $result['picture'] . '"  alt="Logo"></a>';
                     echo '<p>' . $result['name'] . '</p>';
                     echo '</div>';
                 }
@@ -103,7 +103,7 @@ mysqli_close($db);
             // Display all locations
             foreach ($locations as $location) {
                 echo '<div id="mainImage">';
-                echo '<a href="../pages/location.php"><img src="../images/' . $location['picture'] . '"  alt="Logo"></a>';
+                echo '<a href="../pages/location.php?id=' . $location['id'] .'"><img src="../images/' . $location['picture'] . '"  alt="Logo"></a>';
                 echo '<p>' . $location['name'] . '</p>';
                 echo '</div>';
             } ?>
