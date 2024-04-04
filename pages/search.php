@@ -97,16 +97,17 @@ mysqli_close($db);
                 }
             } else { ?>
                 <div id="noResults">
-                    <p>No results found</p>
+                    <p tabindex="1">No results found</p>
                 </div>
-                <?php }
+                <?php
             // Display all locations
             foreach ($locations as $location) {
                 echo '<div id="mainImage">';
                 echo '<a href="../pages/location.php?id=' . $location['id'] .'"><img src="../images/' . $location['picture'] . '"  alt="' . $location['name'] . '"></a>';
                 echo '<p>' . $location['name'] . '</p>';
                 echo '</div>';
-            } ?>
+            }
+            }?>
         </div>
     </main>
     <footer>
