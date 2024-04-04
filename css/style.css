@@ -94,11 +94,26 @@ footer img{
 
 #locationMap img{
     width: 80vw;
+    border: black solid 3px;
+    border-top: 0;
 }
 #locationMap{
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: #f7fbff;
+}
+
+#locationMap p{
+    width: 79vw;
+    font-size: larger;
+    font-weight: bold;
+    background-color: #e1f9ff;
+    padding: 20px 10px;
+    border: black 3px solid;
+    border-radius: 20px;
 }
 
 #navText {

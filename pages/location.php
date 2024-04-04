@@ -53,6 +53,7 @@ if(isset($_GET['id'])) {
 <!--        er moet hier een plattegrond komen met text to speech die uitlegt hoe je ergens komt-->
         <div id="locationMap">
             <img src="../images/<?php echo $location['map']; ?>" alt="<?php echo $location['name']; ?>">
+            <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga id laborum nesciunt pariatur veniam veritatis. Deserunt dignissimos, error et fugit labore magni perspiciatis quas reiciendis, sit sunt tempore ullam.</p>
         </div>
     </main>
 
