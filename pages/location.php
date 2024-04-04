@@ -27,7 +27,7 @@
 
 <!--        er moet hier een plattegrond komen met text to speech die uitlegt hoe je ergens komt-->
         <div id="map">
-            <img src="../images/Placeholder.png" alt="placeholder">
+            <img src="../images/VisioMap.png" alt="placeholder">
         </div>
     </main>
 
