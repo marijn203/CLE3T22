@@ -42,7 +42,7 @@ if(isset($_GET['id'])) {
         <form action="" method="get">
         </form>
         <div id="navText">
-            <h1><?php echo $location['name']; ?></h1>
+            <h1 tabindex="1"><?php echo $location['name']; ?></h1>
         </div>
         <div id="navFiller">
         </div>
