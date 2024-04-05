@@ -45,7 +45,8 @@ CREATE TABLE `locations` (
 INSERT INTO `locations` (`id`, `name`, `city`, `street`, `number`, `postalCode`, `picture`, `map`) VALUES
                                                                                                        (1, 'Bartiméus', 'Rotterdam', 'Maasstadweg', 150, '3079DZ', 'Bartiméus.png', 'BartiméusMap.png'),
                                                                                                        (2, 'Visio', 'Rotterdam', 'Schiedamse Vest', 158, '3011BH', 'Visio.png', 'VisioMap.png'),
-                                                                                                       (3, 'Stichting Beter Zien Anders Kijken', 'Rotterdam', 'Kipstraat', 37, '3011RS', 'StichtingBeterZienAndersKijken.png', 'StichtingBeterZienAndersKijkenMap.png');
+                                                                                                       (3, 'Stichting Beter Zien Anders Kijken', 'Rotterdam', 'Kipstraat', 37, '3011RS', 'StichtingBeterZienAndersKijken.png', 'StichtingBeterZienAndersKijkenMap.png'),
+                                                                                                       (4, 'Erasmus MC', 'Rotterdam', 'Dr. Molewaterplein', 40, '3015GD', 'Erasmus.png', 'ErasmusMap.png');
 
 --
 -- Indexes for dumped tables
