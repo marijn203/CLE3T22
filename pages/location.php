@@ -37,12 +37,12 @@ if(isset($_GET['id'])) {
     <nav>
         <!--        dit is het logo     -->
         <div id="navLogo">
-            <a href="../index.php"><img src="../images/logo.png" alt="Logo"></a>
+            <a href="../index.php"><img src="../images/logo.png" alt="Homeknop"></a>
         </div>
         <form action="" method="get">
         </form>
         <div id="navText">
-            <h1 tabindex="1"><?php echo $location['name']; ?></h1>
+            <h1 lang="nl" tabindex="1"><?php echo $location['name']; ?></h1>
         </div>
         <div id="navFiller">
         </div>
@@ -53,7 +53,7 @@ if(isset($_GET['id'])) {
 <!--        er moet hier een plattegrond komen met text to speech die uitlegt hoe je ergens komt-->
         <div id="locationMap">
             <img src="../images/<?php echo $location['map']; ?>" alt="<?php echo $location['name']; ?>">
-            <p tabindex="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga id laborum nesciunt pariatur veniam veritatis. Deserunt dignissimos, error et fugit labore magni perspiciatis quas reiciendis, sit sunt tempore ullam.</p>
+            <p lang="nl" tabindex="2"><?= $location['mapText'] ?></p>
         </div>
     </main>
 
